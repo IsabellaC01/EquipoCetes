@@ -70,4 +70,49 @@ El precio de un CETE se puede calcular a partir de su taza de rendimiento o su t
 Tanto el interés simple como el rendimiento de lso CETES crecen de forma lineal en función del tiempo. Nohay capitalización o reinverisón de intereses a lo largo del periodo. 
 Otra característica en común es que en ambos hay u valor inicial o precio de compra, un valor final o valor nominal, una tasa de interés o rendimientos y un plazo de tiempo, solo que en CETES ya está establecido los periodos en días, con sus respectivas tasas variables. 
 
+# EJERCICIO PRÁCTICO DE CETES CON INTERÉS SIMPLE 
+Con el siguiente código puede cargar las funciones para llevar a cabo los ejercicios 
+
+Con el siguiente código , puede usted cargar las funciones relaticas a los cálculos de interés simple: 
+{r}
+source("https://raw.githubusercontent.com/IsabellaC01/EquipoCetes/refs/heads/main/EjercicioCetes.R")
+
+A continuación se dan ejemplos del uso de las formulas correspondientes: 
+
+## Arturo Meza quiere invertir en CETES pero no sabe cual es la mejor opción
+# a) Invertir $10,000.00 a un plazo de un año con interés del 10.38%
+Para este caso se tienen los siguientes datos: 
+
+$VA$=$10,000.00
+$r$= 10.38% anual
+$t$= 1 año 
+
+Se realizan los cálculos
+{r}
+# Creamos objetos con los valores de entrada: 
+valorActual=10000
+tasaPeriodo=0.1038
+nPeriodos=1
+# Calculamos el valor futuro: 
+valorFuturo=valorFinalSimple(VA=valorActual,r=tasaPeriodo,t=nPeriodos)
+#Imprimir el resultado:
+valorFuturo
+# b) Invertir $10,000.00 a un plazo de 3 meses con interés del 10.47%
+Para este caso se tienen los siguientes datos: 
+
+$VA$=$10,000.00
+$r$= 10.47% anual
+$t$= 3 meses 
+
+Se realizan los cálculos
+{r}
+# Creamos objetos con los valores de entrada: 
+valorActual=10000
+tasaPeriodo=0.1047
+nPeriodos=.25
+# Calculamos el valor futuro: 
+valorFuturo=valorFinalSimple(VA=valorActual,r=tasaPeriodo,t=nPeriodos)
+#Imprimir el resultado:
+valorFuturo
+
 
