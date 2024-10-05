@@ -97,7 +97,6 @@ nPeriodos=1
 valorFuturo=valorFinalSimple(VA=valorActual,r=tasaPeriodo,t=nPeriodos)
 #Imprimir el resultado:
 valorFuturo
-
 ```
 
 # b) Invertir $10,000.00 a un plazo de 3 meses con interés del 10.47%
